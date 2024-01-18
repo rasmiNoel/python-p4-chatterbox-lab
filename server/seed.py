@@ -23,6 +23,8 @@ def make_messages():
         message = Message(
             body=fake.sentence(),
             username=rc(usernames),
+            updated_at=fake.date_time_this_year(),
+            created_at=fake.date_time_this_year()
         )
         messages.append(message)
 
